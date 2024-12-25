@@ -8,7 +8,7 @@
 		<!-- Preload critical resources -->
 		<link rel="preload" href="./assets/bootstrap/bootstrap.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
 		<link rel="preload" href="./assets/style.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
-		<link rel="preload" href="https://fonts.googleapis.com/css2?family=Inter&display=swap" as="style" crossorigin="anonymous">
+		<link rel="preload" href="https://fonts.googleapis.com/css2?family=Inter&display=swap" as="style" onload="this.onload=null;this.rel='stylesheet'">
 		<link rel="preload" href="./assets/images/nina.webp" as="image" fetchpriority="high">
 		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 		<link rel="preconnect" href="https://fonts.googleapis.com">
@@ -96,7 +96,7 @@
 			<div class="carousel-item active">
 
 				<img 
-    src="./assets/images/ryoji-iwata-wUZjnOv7t0g-unsplash.webp" 
+    src="./assets/images/slider/ryoji-iwata-wUZjnOv7t0g-unsplash.webp" 
     sizes="(max-width: 768px) 100vw, 50vw" 
     class="d-block w-100" 
     alt="image slider de edward cisneros" 
@@ -113,7 +113,8 @@
 					class="d-block w-100" 
 					alt="image slider de nicholas grenn" 
 					width="1920" 
-					height="590">
+					height="590"
+					fetchpriority="high">
 			</div>
 			<div class="carousel-item">
 				<img 
@@ -121,7 +122,8 @@
 					class="d-block w-100" 
 					alt="image slider de edward cisneros" 
 					width="1920" 
-					height="590">
+					height="590"
+					fetchpriority="high">
 			</div>
 			
 		</div>
