@@ -6,3 +6,12 @@
 .nav-item > .active-tag {
     background-color: #beb45a;
 }
+
+.modal-body {
+    display: flex;
+    align-items: center;
+}
+
+.modal-body .img-fluid {
+    max-width: calc(100% - 60px);
+}

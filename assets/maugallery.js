@@ -109,7 +109,9 @@
             $(`#${lightboxId}`)
                 .find(".lightboxImage")
                 .attr("src", element.attr("src"));
-            $(`#${lightboxId}`).modal("toggle");
+            // Utiliser la syntaxe Bootstrap 5
+            const modal = new bootstrap.Modal(document.getElementById(lightboxId ? lightboxId : "galleryLightbox"));
+            modal.show();
         },
         prevImage() {
             let activeImage = null;
@@ -248,12 +250,8 @@
                     cat.classList.remove("active");
                     cat.style.backgroundColor = ""; // Réinitialise le background
                 });
-                categories.forEach(cat => {
-                    cate.classList.add("active");
-                    cate.style.backgroundColor = "#beb45a"; // Réinitialise le background
-                });
-                
-                
+                this.classList.add("active");
+                this.style.backgroundColor = "#beb45a"; // Applique la couleur à l'élément cliqué
             });
         });
     });
